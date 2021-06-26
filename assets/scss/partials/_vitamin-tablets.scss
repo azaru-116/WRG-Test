@@ -1,0 +1,13 @@
+.wrg-vitamin{
+    .wrg-img{
+        margin-bottom: 20px;
+    }
+    .slick-list{
+        padding-right: 150px;
+    }
+}
+.wrg-skin-care{
+    &--border{
+        border-bottom: 1px solid $color-grey;
+    }
+}

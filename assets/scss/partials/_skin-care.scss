@@ -1,0 +1,189 @@
+.wrg-skin-care{
+    padding: 60px 0px;
+    &__head{
+        position: relative;
+        margin-bottom: $spacer-6;
+        .wrg-btn{
+          position: absolute;
+          right: 60px;
+          top: 0;
+        }
+    }
+    &__pd{
+        display: flex;
+        margin: 0 -16px;
+    }
+    &__pd-tile{
+        width: calc(25% - 32px);
+        text-align: center;
+        margin: 0 $spacer-3;
+    }
+   
+    &__pd-hed{
+        font-size: 24px;
+        line-height: 28px;
+        color: #151442;
+        font-weight: 500;
+        margin-bottom: $spacer-3;
+       
+    }
+    &__pd-amt{
+        font-size: 14px;
+        line-height: 18px;
+        color: #8F9095;
+        margin-bottom: $spacer-2;
+    }
+    &__pd-text{
+        font-weight: 500;
+        color: #8F9095;
+    }
+    .wrg-img{
+        width: 100%;
+        height: auto;
+    }
+}
+.wrg-our-client{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 0%;
+    padding: 60px 0;
+    background-attachment: fixed;
+    &__outer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__left{
+        width: 50%;
+    }
+    &__hed{
+        text-align: left;
+        color: #fff;
+        margin-bottom: 40px;
+    }
+    &__link{
+        text-decoration: underline !important;
+        color: #fff;
+        &:hover{
+            color: #fff;
+        }
+    }
+    &__rt{
+        width: 40%;
+        padding: 60px;
+        padding-bottom: 40px;
+        background-color: #FFF3F3;
+        &-txt{
+            text-align: left;
+            font-size: 24px;
+            line-height: 30px;
+            color: #342B42;
+            font-weight: bold;
+            position: relative;
+            &::after{
+                content: '';
+                background-image: url("../images/quotes-2.svg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                bottom: -25px;
+                right: 0;
+
+            }
+            &::before{
+                content: '';
+                background-image: url("../images/quote.svg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: -25px;
+                left: -30px;
+            }
+        }
+    }
+    &__name{
+        margin-top: 40px;
+        text-align: right;
+        color: #454545;
+        font-weight: 500;
+        margin-bottom: 8px;
+    }
+    &__dec{
+        font-size: 14px;
+        line-height: 18px;
+        color: #454545;
+        text-align: right;
+    }
+}
+@include tablet{
+    .wrg-skin-care{
+       
+        &__head{
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           .wrg-btn{
+            position: static;
+           
+          }
+        }
+    }
+    .wrg-our-client{
+        &__rt{
+            width: 50%;
+            padding-right: 40px;
+        }
+    }
+}
+
+@include mobile{
+    .wrg-skin-care{
+        padding: 32px 0px;
+        &__head{
+           display: flex;
+           align-items: center;
+           flex-direction: column;
+           margin-bottom: 8px;
+           .wrg-main-head{
+               margin-bottom: $spacer-3;
+           }
+           .wrg-btn{
+            position: static;
+           
+          }
+        }
+        &__pd{
+            flex-direction: column;
+
+            margin: 0;
+        }
+        &__pd-tile{
+            width: 100%;
+            text-align: center;
+            margin: $spacer-3 0;
+        }
+        .wrg-img{
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+    .wrg-our-client{
+        padding: 32px 0px;
+        &__outer{
+            flex-direction: column;
+        }
+        &__left{
+            width: 100%;
+            margin-bottom: 24px;
+        }
+        &__rt{
+            width: 100%;
+           
+            padding-right: 30px;
+        }
+    }
+}
